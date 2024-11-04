@@ -1,6 +1,10 @@
-#include "exercice.h"
+#include "Vector.h"
 
 int main() {
-    afficherMessage();  // Appel de la fonction définie dans exercice.cpp
+   Vector a(5); 
+   a[2]=2; 
+   Vectorb b(4,8); 
+   b[8] = 3; 
+   b[3] = 2;  //erreur indice hors vecteur
     return 0;
 }
