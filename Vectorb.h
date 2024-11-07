@@ -1,12 +1,12 @@
 #ifndef __VECTORBH__
 #define __VECTORBH__
+#include "Vector.h"
 
-class Vectorb : public Vector
-{
+class Vectorb : public Vector{
 
     public: 
         Vectorb (int a, int b); // deux parametres maintenant 
-        ~Vector(); 
+        ~Vectorb(); 
         int& operator[](int);
 
     private : 

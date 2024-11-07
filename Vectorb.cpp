@@ -9,16 +9,21 @@
     {       
     }
 
+    
+
     Vectorb::~Vectorb(){
         delete[] elem; //delete avec crochets car new avec []
     }
 
     int &Vectorb:: operator[](int n){
-        if(n>nb_elem + debut || n < debut){
+        if(n>= nb_elem + debut || n < debut){
             throw ("out of range"); 
         }
 
-        return elem[n + a ]; 
+        return elem[n + debut ]; 
+
+
+        // return Vector::operator[n+debut] également possible 
 
     }
 
